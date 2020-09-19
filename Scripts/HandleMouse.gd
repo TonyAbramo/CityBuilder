@@ -20,4 +20,4 @@ func _on_StaticBody_input_event(camera, event, click_position, click_normal, sha
 	if Input.is_action_just_pressed("clic_gauche"):
 		# Créer le batiment
 		print("creation building à " + str(marker.transform.origin))
-		BuildingsManager.CreateBuilding(marker.transform.origin) 
+		CreateBuildingManager.CreateBuilding(marker.transform.origin) 

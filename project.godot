@@ -20,7 +20,7 @@ run/main_scene="res://Scenes/Game.tscn"
 
 [autoload]
 
-BuildingsManager="*res://Scripts/BuildingsManager.gd"
+CreateBuildingManager="*res://Scripts/CreateBuildingManager.gd"
 
 [display]
 
