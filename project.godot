@@ -20,9 +20,7 @@ run/main_scene="res://Scenes/Game.tscn"
 
 [autoload]
 
-BuildingsMgr="*res://Scripts/BuildingsMgr.gd"
-PlayerData="*res://Scripts/PlayerData.gd"
-ParcData="*res://Scripts/ParcData.gd"
+BuildingsManager="*res://Scripts/BuildingsManager.gd"
 
 [display]
 

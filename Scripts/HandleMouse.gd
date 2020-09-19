@@ -15,3 +15,9 @@ func _on_StaticBody_input_event(camera, event, click_position, click_normal, sha
 	var posY = round(click_position.z) + 0.5
 	# On place le marker sur la bonne case (survol souris)
 	marker.transform.origin = Vector3(posX, 0, posY)
+
+	# Détecter le clic gauche
+	if Input.is_action_just_pressed("clic_gauche"):
+		# Créer le batiment
+		print("creation building à " + str(marker.transform.origin))
+		BuildingsManager.CreateBuilding(marker.transform.origin) 
