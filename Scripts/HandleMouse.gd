@@ -2,7 +2,7 @@ extends StaticBody
 
 # Marker case
 var marker
-var pos = Vector3()
+var positionCreatedBuilding = Vector3()
 
 # Récupération du marker
 func _ready():
@@ -19,5 +19,5 @@ func _on_StaticBody_input_event(camera, event, click_position, click_normal, sha
 	# Détecter le clic gauche
 	if Input.is_action_just_pressed("clic_gauche"):
 		# Créer le batiment
-		print("creation building à " + str(marker.transform.origin))
-		CreateBuildingManager.CreateBuilding(marker.transform.origin) 
+		positionCreatedBuilding = Vector3(posX, 0.5, posY)
+		CreateBuildingManager.CreateBuilding(positionCreatedBuilding) 
